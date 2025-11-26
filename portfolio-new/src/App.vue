@@ -1,11 +1,21 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="min-h-screen flex flex-col">
+    <!-- header -->
+     <PageHeader /> 
+
+    <!-- main  -->
+    <main class="grow pt-20">
+      <Home />
+    </main>
+
+    <!-- footer -->
+    <PageFooter />
+  </div>
 </template>
 
-<style scoped></style>
+<script setup>
+import PageHeader from './components/Page/PageHeader.vue';
+import PageFooter from './components/Page/PageFooter.vue';
+import Home from './components/Page/Home.vue';
+</script>
+
