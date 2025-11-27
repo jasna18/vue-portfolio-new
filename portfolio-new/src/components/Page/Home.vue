@@ -1,26 +1,26 @@
 <template>
   <section
-    id="hero"
+    id="home"
     :style="{
       // backgroundColor: darkMode ? '#1F2937' : '#A7C1A8',
       color: darkMode ? 'white' : 'black'
     }"
     class="w-full relative min-h-screen flex flex-col items-center
-           px-2 py-4 p-4
+           px-2 py-4 p-4 lg:pt-22
            sm:pr-24  sm:pl-8  /* This was for content box spacing */
            md:px-16  md:gap-2 md:p-0  md:pl-16 /* This was for content box spacing */
-           lg:gap-6 lg:flex-row
            transition-colors duration-500 
            overflow-x-hidden
-           h-full min-w-0 bg-orange-100
+         min-w-0 
           ">
-  <div class="w-full flex flex-col items-start md:flex-row  pt-4 md:pt-4 md:mt-4 lg:pt-2 px-2 md:mx-2 mb-2 my-0 bg-yellow-100 ">
+  <div class="w-full flex flex-col items-start lg:flex-row pt-4 md:pt-4 md:mt-4 lg:pt-2
+  max-w-6xl mx-auto px-4 gap-6 ">
     <!-- left section -->
       <!-- this div for the text content wrapper, removed flex-1 to w-full -->
-        <div class="w-full lg:w-2/3 xl:w-12/5 flex flex-col md:ml-2 md:mr-2 md:mb-2 items-center md:items-start p-2 md:p-8 bg-blue-100
-        min-w-0 sm:text-center mb-2 gap-2 md:gap-4 md:text-center  
-        md:w-[98%]   /* Optional: Slightly reduce the wrapper's overall width to prevent stretching */
-            "> 
+        <div class="w-full lg:w-1/2 flex flex-col md:mb-2 items-center md:items-start p-2 md:p-8
+        min-w-0 sm:text-center mb-2 gap-2 md:gap-4 md:text-center   
+           /* Optional: Slightly reduce the wrapper's overall width to prevent stretching */
+     "> 
       
         <div class="text-sm md:text-md mb-4 mt-2 text-center  md:mb-4 md:ml-2 rounded-full 
                dark:bg-gray-800/40 border border-white/10 backdrop-blur-md shadow-lg p-1 px-2 bg-white/30 text-[#000000]
@@ -37,7 +37,7 @@
       </div>
       <!-- text section box -->
   <div
-        class="w-full max-w-md bg-white/30 dark:bg-gray-800/40 backdrop-blur-md md:w-[120%]
+        class="w-full max-w-md bg-white/30 dark:bg-gray-800/40 backdrop-blur-md 
                p-6 md:px-4 rounded-xl shadow-lg md:ml-1 inset-shadow-sm shadow-orange-500/50"
         :class="[
           'transition-all duration-1000 ease-out',
@@ -65,18 +65,19 @@
 
   </div>
 </div>
-</div>
       <!-- ref="content" → Vue ref, so you can access this element in your script (maybe for intersection observer to trigger animation). -->
-   <div class="w-full md:flex-row md:w-[98%] md:mb-2 lg:w-2/3 xl:w-7/5 flex justify-center min-w-0 sm:mt-8 bg-emerald-100 ">
+   <div class="w-full md:flex-row md:mb-2 lg:w-1/2 lg:pt-14  flex justify-center min-w-0 sm:mt-8">
       <img 
     ref="content"
     :src="girlSittingImg"
     alt="Typing code illustration"
-    class="w-full max-w-sm md:max-w-none md:w-100 lg:w-120 xl:w-3xl
+    class="w-full max-w-sm md:max-w-none lg:max-w-none
            rounded-xl bg-transparent content-wrapper"
     :class="{ 'animate-in': isImageVisible }"
 />
     </div>
+</div>
+
 
 
   </section>
