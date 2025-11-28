@@ -1,26 +1,24 @@
 <template>
   <section
-    id="home"
+    id="hero"
     :style="{
       // backgroundColor: darkMode ? '#1F2937' : '#A7C1A8',
       color: darkMode ? 'white' : 'black'
     }"
     class="w-full relative min-h-screen flex flex-col items-center
-           px-2 py-4 p-4 lg:pt-22 mb-2
+           px-2 py-4 p-4
            sm:pr-24  sm:pl-8  /* This was for content box spacing */
            md:px-16  md:gap-2 md:p-0  md:pl-16 /* This was for content box spacing */
            transition-colors duration-500 
            overflow-x-hidden
-         min-w-0 
+           h-full min-w-0 bg-orange-100
           ">
-  <div class="w-full flex flex-col items-start lg:flex-row pt-4 md:pt-4 md:mt-4 lg:pt-2
-mx-auto px-4  gap-6 xl:gap-20 2xl:gap-32
-  max-w-6xl xl:max-w-7xl 2xl:max-w-[1500px]">
+  <div class="w-full flex flex-col items-start lg:flex-row pt-4 md:pt-4 md:mt-4 lg:pt-2 bg-yellow-100  ">
     <!-- left section -->
       <!-- this div for the text content wrapper, removed flex-1 to w-full -->
-        <div class="w-full lg:w-1/2 flex flex-col md:mb-2 items-center md:items-start p-2 md:p-8
+        <div class="w-full lg:w-2/3 flex flex-col md:ml-2 md:mr-2 md:mb-2 items-center md:items-start p-2 md:p-8 bg-blue-100
         min-w-0 sm:text-center mb-2 gap-2 md:gap-4 md:text-center   
-           /* Optional: Slightly reduce the wrapper's overall width to prevent stretching */
+        md:w-[98%]   /* Optional: Slightly reduce the wrapper's overall width to prevent stretching */
      "> 
       
         <div class="text-sm md:text-md mb-4 mt-2 text-center  md:mb-4 md:ml-2 rounded-full 
@@ -66,19 +64,18 @@ mx-auto px-4  gap-6 xl:gap-20 2xl:gap-32
 
   </div>
 </div>
+</div>
       <!-- ref="content" → Vue ref, so you can access this element in your script (maybe for intersection observer to trigger animation). -->
-   <div class="w-full md:flex-row md:mb-2 lg:w-1/2  lg:pt-14 flex justify-center min-w-0 sm:mt-8">
+   <div class="w-full md:flex-row md:w-[98%] md:mb-2 lg:w-1/3  flex justify-center min-w-0 sm:mt-8 bg-emerald-100 ">
       <img 
     ref="content"
     :src="girlSittingImg"
     alt="Typing code illustration"
-    class="w-full max-w-sm md:max-w-none lg:max-w-none
+    class="w-full max-w-sm md:max-w-none
            rounded-xl bg-transparent content-wrapper"
     :class="{ 'animate-in': isImageVisible }"
 />
     </div>
-</div>
-
 
 
   </section>

@@ -18,4 +18,3 @@ import PageHeader from './components/Page/PageHeader.vue';
 import PageFooter from './components/Page/PageFooter.vue';
 import Home from './components/Page/Home.vue';
 </script>
-

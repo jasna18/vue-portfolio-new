@@ -6,7 +6,7 @@
       color: darkMode ? 'white' : 'black'
     }"
     class="w-full relative min-h-screen flex flex-col items-center
-           px-2 py-4 p-4 lg:pt-22 mb-2
+           px-2 py-4 p-4 lg:pt-22
            sm:pr-24  sm:pl-8  /* This was for content box spacing */
            md:px-16  md:gap-2 md:p-0  md:pl-16 /* This was for content box spacing */
            transition-colors duration-500 
@@ -14,8 +14,7 @@
          min-w-0 
           ">
   <div class="w-full flex flex-col items-start lg:flex-row pt-4 md:pt-4 md:mt-4 lg:pt-2
-mx-auto px-4  gap-6 xl:gap-20 2xl:gap-32
-  max-w-6xl xl:max-w-7xl 2xl:max-w-[1500px]">
+  max-w-6xl mx-auto px-4 gap-6 ">
     <!-- left section -->
       <!-- this div for the text content wrapper, removed flex-1 to w-full -->
         <div class="w-full lg:w-1/2 flex flex-col md:mb-2 items-center md:items-start p-2 md:p-8
@@ -67,7 +66,7 @@ mx-auto px-4  gap-6 xl:gap-20 2xl:gap-32
   </div>
 </div>
       <!-- ref="content" → Vue ref, so you can access this element in your script (maybe for intersection observer to trigger animation). -->
-   <div class="w-full md:flex-row md:mb-2 lg:w-1/2  lg:pt-14 flex justify-center min-w-0 sm:mt-8">
+   <div class="w-full md:flex-row md:mb-2 lg:w-1/2  lg:pt-14  flex justify-center min-w-0 sm:mt-8">
       <img 
     ref="content"
     :src="girlSittingImg"
