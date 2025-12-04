@@ -68,12 +68,12 @@ mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
   </div>
 </div>
       <!-- ref="content" → Vue ref, so you can access this element in your script (maybe for intersection observer to trigger animation). -->
-   <div class="w-full md:flex-row md:mb-2 md:mt-2 lg:w-1/2  lg:pt-14 flex justify-center min-w-0 sm:mt-8">
+   <div class="w-full md:flex-row md:mb-2 md:mt-2 lg:w-1/2  lg:pt-14 flex items-start justify-center md:justify-start min-w-0 sm:mt-8">
       <img 
     ref="content"
     :src="girlSittingImg"
     alt="Typing code illustration"
-    class="w-full max-w-sm md:max-w-none lg:max-w-none
+    class="w-full max-w-sm  lg:max-w-none
            rounded-xl bg-transparent content-wrapper"
     :class="{ 'animate-in': isImageVisible }"
 />
