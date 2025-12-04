@@ -6,14 +6,16 @@
       color: darkMode ? 'white' : 'black'
     }"
     class="w-full relative min-h-screen flex flex-col items-center
-           px-2 py-4 p-4 lg:pt-22 mb-2
+           px-2 py-4 p-4 mb-2 pt-[calc(header-height-here)]
            sm:pr-24  sm:pl-8  /* This was for content box spacing */
-           md:px-16  md:gap-2 md:p-0  md:pl-16 /* This was for content box spacing */
+           md:px-2  md:gap-2 md:pt-4  md:pl-4 /* This was for content box spacing */
+           lg:pt-4 
+       
            transition-colors duration-500 
            overflow-x-hidden
          min-w-0 
           ">
-  <div class="w-full flex flex-col items-start lg:flex-row pt-4 md:pt-4 md:mt-4 lg:pt-2
+  <div class="w-full flex flex-col items-start lg:flex-row pt-4
 mx-auto px-4  gap-6 xl:gap-20 2xl:gap-32
   max-w-6xl xl:max-w-7xl 2xl:max-w-[1500px]">
     <!-- left section -->
@@ -143,6 +145,11 @@ onMounted(() => {
   if (content.value) {
     observer.observe(content.value);
   }
+  setTimeout(() => {
+  isVisible.value = true;
+  isImageVisible.value = true;
+  isBarVisible.value = true;
+}, 500);
 });
 // Use watch to apply the background color to the entire body
 watch(darkMode, (newVal) => {

@@ -4,7 +4,7 @@
      <PageHeader /> 
 
     <!-- main  -->
-    <main class="grow pt-20">
+    <main class="grow pt-10 md:pt-12">
       <Home />
     </main>
 
