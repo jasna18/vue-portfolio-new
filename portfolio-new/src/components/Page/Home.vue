@@ -10,17 +10,16 @@
            sm:pr-24  sm:pl-8  /* This was for content box spacing */
            md:px-2  md:gap-2 md:pt-4  md:pl-4 /* This was for content box spacing */
            lg:pt-4 
-       
            transition-colors duration-500 
            overflow-x-hidden
          min-w-0 
           ">
   <div class="w-full flex flex-col items-start lg:flex-row pt-4
-mx-auto px-4  gap-6 xl:gap-20 2xl:gap-32
+mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
   max-w-6xl xl:max-w-7xl 2xl:max-w-[1500px]">
     <!-- left section -->
       <!-- this div for the text content wrapper, removed flex-1 to w-full -->
-        <div class="w-full lg:w-1/2 flex flex-col md:mb-2 items-center md:items-start p-2 md:p-8
+        <div class="w-full lg:w-1/2 flex flex-col md:mb-2 items-center md:items-start p-2 md:p-4
         min-w-0 sm:text-center mb-2 gap-2 md:gap-4 md:text-center   
            /* Optional: Slightly reduce the wrapper's overall width to prevent stretching */
      "> 
@@ -69,7 +68,7 @@ mx-auto px-4  gap-6 xl:gap-20 2xl:gap-32
   </div>
 </div>
       <!-- ref="content" → Vue ref, so you can access this element in your script (maybe for intersection observer to trigger animation). -->
-   <div class="w-full md:flex-row md:mb-2 lg:w-1/2  lg:pt-14 flex justify-center min-w-0 sm:mt-8">
+   <div class="w-full md:flex-row md:mb-2 md:mt-2 lg:w-1/2  lg:pt-14 flex justify-center min-w-0 sm:mt-8">
       <img 
     ref="content"
     :src="girlSittingImg"
@@ -117,6 +116,12 @@ import girlSittingImg from '../../assets/girl-sitting.png';
 //then triggers the slide-in animation for the left text-box and image
 // then stops observing it to prevent repeated triggers
 onMounted(() => {
+  // If user is at top of the page, show animations immediately
+if (window.scrollY < 10) {
+  isVisible.value = true;
+  setTimeout(() => { isImageVisible.value = true }, 300);
+  setTimeout(() => { isBarVisible.value = true }, 600);
+}
     // Check if the content is visible in the viewport
   const observer = new IntersectionObserver(
     (entries) => {
@@ -145,11 +150,11 @@ onMounted(() => {
   if (content.value) {
     observer.observe(content.value);
   }
-  setTimeout(() => {
-  isVisible.value = true;
-  isImageVisible.value = true;
-  isBarVisible.value = true;
-}, 500);
+//   setTimeout(() => {
+//   isVisible.value = true;
+//   isImageVisible.value = true;
+//   isBarVisible.value = true;
+// }, 500);
 });
 // Use watch to apply the background color to the entire body
 watch(darkMode, (newVal) => {
