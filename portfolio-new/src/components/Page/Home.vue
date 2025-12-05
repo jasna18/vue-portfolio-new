@@ -122,6 +122,8 @@ if (window.scrollY < 10) {
   setTimeout(() => { isImageVisible.value = true }, 300);
   setTimeout(() => { isBarVisible.value = true }, 600);
 }
+const sections = document.querySelectorAll("section");
+
     // Check if the content is visible in the viewport
   const observer = new IntersectionObserver(
     (entries) => {
@@ -144,7 +146,7 @@ if (window.scrollY < 10) {
         }
       });
     },
-    { threshold: 0.3 } // Trigger when 30% of hero is visible
+    { threshold: 0.2 } // Trigger when 30% of hero is visible
   );
 
   if (content.value) {

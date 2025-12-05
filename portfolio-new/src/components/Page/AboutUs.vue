@@ -1,4 +1,5 @@
 <template>
+<section id="about" class="min-h-screen">
     <div class="container mx-auto px-4 md:px-6 lg:px-8 w-full py-16 md:py-24 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 
       <div class="text-center mb-16">
@@ -71,10 +72,11 @@
       </div>
 
     </div>
+    </section>
 </template>
 
 <script setup>
-import AboutComponent from '../components/composobles/AboutComponent.vue';
+import AboutComponent from '../composobles/AboutComponent.vue';
 </script>
 
 <style scoped>

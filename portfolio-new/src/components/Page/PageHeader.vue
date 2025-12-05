@@ -22,7 +22,7 @@
               'md:flex flex-col md:flex-row gap-4 md:gap-8 absolute md:static top-14 p-4 md:p-0 shadow md:shadow-none ml-auto mr-0 md:ml-auto md:mr-8'
             ]"
           >
-            <li><a href="#home" @click="setActive('home')" :class="linkClass('home')">Home</a></li>
+            <li><a href="home" @click="setActive('home')" :class="linkClass('home')">Home</a></li>
             <li><a href="#about" @click="setActive('about')" :class="linkClass('about')">About</a></li>
             <li><a href="#projects" @click="setActive('projects')" :class="linkClass('projects')">Projects</a></li>
             <li><a href="#contact" @click="setActive('contact')" :class="linkClass('contact')">Contact</a></li>
@@ -64,7 +64,7 @@ const linkClass = (section) => {
 
 // Scroll Case — Scroll Spy
 onMounted(() => {
-  const sections = document.querySelectorAll("section");
+  const sections = document.querySelectorAll("#home, #about, #projects, #contact");
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -74,7 +74,10 @@ onMounted(() => {
         }
       });
     },
-    { threshold: 0.5 }
+    {
+      threshold: 0.25,
+      rootMargin: "-80px 0px 0px 0px" // compensate for your fixed header
+    }
   );
 
   sections.forEach((sec) => observer.observe(sec));
@@ -84,6 +87,7 @@ onMounted(() => {
     isScrolled.value = window.scrollY > 80;
   });
 });
+
 
 const headerClass = computed(() => ({
   "sm:bg-transparent": !isScrolled.value,
