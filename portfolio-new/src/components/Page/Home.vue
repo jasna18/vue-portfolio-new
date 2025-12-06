@@ -2,7 +2,6 @@
   <section
     id="home"
     :style="{
-      // backgroundColor: darkMode ? '#1F2937' : '#A7C1A8',
       color: darkMode ? 'white' : 'black'
     }"
     class="w-full relative min-h-screen flex flex-col items-center
@@ -34,8 +33,8 @@ mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
         Full Stack Developer
         <!-- <AnimatedHeading /> -->
       </div>
-       <div class="text-lg md:text-xl font-semibold text-gray-700 dark:text-gray-300 md:ml-2 mb-6 md:mt-0">
-        <AnimatedHeading />
+       <div class="text-lg md:text-xl text-gray-700 dark:text-gray-300 md:ml-2 mb-6 md:mt-0">
+        <AnimatedHeading fontWeight="400"/>
       </div>
       <!-- text section box -->
   <div
@@ -47,7 +46,7 @@ mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
         ]"
       >
         <h4 class="text-md md:text-2xl mb-4 sm:hidden md:text-left">Hi, I'm Jasna 👩‍💻</h4>
-        <p class="text-md sm:text-sm mt-3 mb-0  md:text-md lg:text-lg leading-relaxed wrap-break-word">
+        <p class="text-justify text-md sm:text-sm mt-3 mb-0  md:text-md lg:text-lg leading-relaxed wrap-break-word">
           "Developing intelligent, responsive, and
           reliable applications by blending design,
           logic, and hands-on coding expertise"
@@ -159,12 +158,12 @@ const sections = document.querySelectorAll("section");
 // }, 500);
 });
 // Use watch to apply the background color to the entire body
-watch(darkMode, (newVal) => {
-  const bgColor = newVal ? '#1F2937' : '#A7C1A8';
+//  watch(darkMode, (newVal) => {
+// const bgColor = newVal ? '#1F2937' : '#A7C1A8';
   
-  // Update global body style
-  document.body.style.backgroundColor = bgColor;
-}, { immediate: true }); // Runs immediately on component mount
+//  Update global body style
+//document.body.style.backgroundColor = bgColor;
+ //}, { immediate: true }); // Runs immediately on component mount
 </script>
 
 <style>

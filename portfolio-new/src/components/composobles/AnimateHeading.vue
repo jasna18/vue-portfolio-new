@@ -1,19 +1,37 @@
 <template>
-  <h1 class="text-lg md:text-lg lg:text-xl font-normal md:mt-4 mb-2 ">
+  <h1 class="text-lg md:text-lg lg:text-xl"
+  :style="{ 
+      fontWeight: fontWeight }">
     {{ displayedText }}<span class="cursor">|</span>
+     
   </h1>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
-
 // Define the headings to rotate through
-const headings = [
-  "Laravel Developer",
-  "Python Developer",
-  "Full Stack Developer",
-];
-
+// const headings = [
+//   "Laravel Developer",
+//   "Python Developer",
+//   "Full Stack Developer",
+// ];
+const props = defineProps({
+  headings: {
+    type: Array,
+    default: () => [
+      "Laravel Developer",
+      "Python Developer",
+      "Full Stack Developer",
+    ],
+  },
+  fontWeight: {
+    type: String,
+    default: "400"   // or any default font
+  }
+  // typeSpeed: { type: Number, default: 100 },
+  // deleteSpeed: { type: Number, default: 50 },
+  // pauseTime: { type: Number, default: 1500 },
+});
 const currentHeadingIndex = ref(0);
 const displayedText = ref('');
 const isTyping = ref(true); // true for typing, false for deleting
@@ -24,7 +42,7 @@ const pauseTime = 1500;     // Pause time after typing/deleting
 
 // --- Core Animation Logic ---
 const animateText = () => {
-  const currentFullText = headings[currentHeadingIndex.value];
+  const currentFullText = props.headings[currentHeadingIndex.value];
 
   if (isTyping.value) {
     // Typing phase
@@ -46,7 +64,7 @@ const animateText = () => {
     } else {
       // Finished deleting, now switch to next heading and start typing again
       isTyping.value = true;
-      currentHeadingIndex.value = (currentHeadingIndex.value + 1) % headings.length;
+      currentHeadingIndex.value = (currentHeadingIndex.value + 1) % props.headings.length;
       setTimeout(animateText, typeSpeed); // Start typing next heading
     }
   }
