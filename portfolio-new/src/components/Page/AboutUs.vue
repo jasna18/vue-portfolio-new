@@ -24,8 +24,8 @@
           >
         </div>
         <!-- animated heading,text -->
-       <div class="md:w-1/2 lg:space-y-2  lg:w-1/2 mt-4 lg:mt-4">
-          <h3 class="text-sm  leading-tight text-center lg:text-start lg:mb-4 px-2 lg:px-6 md:text-center ">
+       <div class="md:w-full lg:space-y-2  lg:w-1/2 mt-4 lg:mt-4">
+          <h3 class="text-sm  leading-tight text-center lg:text-start lg:mb-4 px-2 lg:px-6 md:text-center mb-4 ">
             <AnimateHeading :headings="['Hello World', 'ഹലോ വേൾഡ്']" fontWeight="1000" class="text-orange-500"/>
 
             <br class="md:hidden lg:block "/>
@@ -42,9 +42,9 @@
              and scalability.
             </p>
           <a href="#projects" 
-            class="w-full lg:w-auto lg:inline-flex flex flex-col mt-6 px-4 py-3 bg-[#F68537]  
+            class=" w-full lg:w-auto lg:inline-flex flex flex-col mt-6 px-4 py-3 bg-[#F68537]  
             text-white text-center lg:text-start  font-semibold rounded-lg 
-            shadow-md hover:bg-[#F68537] transition duration-300 mb-2 max-w-xs">
+            shadow-md hover:bg-[#F68537] transition duration-300 mb-2 ">
             View Projects
           </a>
           </div>
