@@ -13,11 +13,11 @@
         </p>
       </div>
      <!-- content wrapper photo div,animation div-text div,project heading  -->
-    <div class="w-full flex flex-col lg:flex-row md:items-start gap-12 lg:gap-16 px-10 mt-2 ">
+    <div class="w-full flex flex-col lg:flex-row gap-12 lg:gap-16 px-10 mt-2 md:items-center">
        <!-- photo -->
-        <div class="px-4 lg:px-10 md:w-1/2 lg:w-1/2 flex flex-col justify-center 
-        lg:justify-end sm:order-1 mt-4 lg:mt-10">
-          <img 
+        <div class="px-4 lg:px-10 md:w-1/2 lg:w-1/2 flex flex-col
+        lg:justify-end  mt-4 lg:mt-10 ">
+          <img
         :src="anime"          
          alt="Jasna Profile" 
             class="rounded-full shadow-lg  object-cover w-54 h-54 md:w-72 md:h-84 lg:w-64 lg:h-64"
@@ -25,13 +25,12 @@
         </div>
         <!-- animated heading,text -->
        <div class="md:w-1/2 lg:space-y-2  lg:w-1/2 mt-4 lg:mt-4">
-          <h3 class="text-sm  leading-tight text-center lg:text-start lg:mb-4 px-2 lg:px-6">
+          <h3 class="text-sm  leading-tight text-center lg:text-start lg:mb-4 px-2 lg:px-6 md:text-center ">
             <AnimateHeading :headings="['Hello World', 'ഹലോ വേൾഡ്']" fontWeight="1000" class="text-orange-500"/>
 
             <br class="md:hidden lg:block "/>
           </h3>
-          <div class="text-sm lg:text-lg px-2 lg:px-6
-          ">
+          <div class="text-sm lg:text-lg px-2 lg:px-6">
           <p class="text-justify text-gray-700 dark:text-gray-300  leading-relaxed wrap-break-word">
             I am a Experienced Software Developer with a 
             proven track record of crafting dynamic web 
