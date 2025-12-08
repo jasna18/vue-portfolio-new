@@ -19,7 +19,7 @@ mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
     <!-- left section -->
       <!-- this div for the text content wrapper, removed flex-1 to w-full -->
         <div class="w-full lg:w-1/2 flex flex-col md:mb-2 items-center md:items-start p-2 md:p-4
-        min-w-0 sm:text-center mb-2 gap-2 md:gap-4 md:text-center   
+        min-w-0 sm:text-center mb-2 gap-2 md:gap-4 md:text-center   lg:mx-12
            /* Optional: Slightly reduce the wrapper's overall width to prevent stretching */
      "> 
       
@@ -46,7 +46,7 @@ mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
         ]"
       >
         <h4 class="text-md md:text-2xl mb-4 sm:hidden md:text-left">Hi, I'm Jasna 👩‍💻</h4>
-        <p class="text-justify text-md sm:text-sm mt-3 mb-0  md:text-md lg:text-lg leading-relaxed wrap-break-word">
+        <p class="text-justify text-md sm:text-sm mt-3 mb-0  md:text-md lg:text-md leading-relaxed wrap-break-word">
           "Developing intelligent, responsive, and
           reliable applications by blending design,
           logic, and hands-on coding expertise"
