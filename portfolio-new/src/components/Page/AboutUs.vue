@@ -52,23 +52,23 @@
         </div>
       </div>
 <!-- card wrapper -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10 px-6 sm:px-10 lg:px-14 mt-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-3 mb-10 sm:px-10 mt-12">
           <AboutComponent 
-            count="26" 
+            count="10" 
             title="Total Projects" 
-            description="Innovative technology solutions crafted" />
+            description="Innovative technology solutions " />
           <AboutComponent 
-            count="109"
+            count="9"
             title="Certificates"
             description="Professional certifications earned" />
           <AboutComponent 
             count="3" 
             title="Years of Experience"
             description="Continuous learning journey" />
-          <AboutComponent 
+          <!-- <AboutComponent 
             count="5+"  
             title="Projects with AI"
-            description="Leveraging machine learning" />
+            description="Leveraging machine learning" /> -->
 
       </div>
 
