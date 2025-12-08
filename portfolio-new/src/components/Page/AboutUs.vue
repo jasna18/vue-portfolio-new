@@ -2,8 +2,7 @@
 <section id="about" class="min-h-screen"
 >
 <!-- all manin wrapper  -->
-<div class="container  px-2 lg:px-8 w-full py-4 md:py-6 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-
+<div class="container  px-4 lg:px-8 w-full py-4 md:py-6 dark:bg-gray-900 text-gray-900 dark:text-gray-100 mx-auto">
       <div class="text-center mb-4">
         <h2 class="text-xl md:text-3xl font-extrabold text-[#F68537] mb-2">
           About Me
@@ -13,10 +12,10 @@
         </p>
       </div>
      <!-- content wrapper photo div,animation div-text div,project heading  -->
-    <div class="w-full flex flex-col lg:flex-row gap-12 lg:gap-16 px-10 mt-2 md:items-center">
+    <div class="w-full flex flex-col lg:flex-row gap-12 lg:gap-16 px-4 sm:px-6 lg:px-4 xl:px-0 mt-2 md:items-center xl:max-w-6xl xl:mx-auto">
        <!-- photo -->
-        <div class="px-4 lg:px-10 md:w-1/2 lg:w-1/2 flex flex-col
-        lg:justify-end  mt-4 lg:mt-10 ">
+        <div class=" md:w-1/2 lg:w-1/2 flex flex-col
+        lg:justify-end  mt-4 lg:mt-10 sm:items-center">
           <img
         :src="anime"          
          alt="Jasna Profile" 
@@ -52,11 +51,13 @@
         </div>
       </div>
 <!-- card wrapper -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-3 mb-10 sm:px-10 mt-12">
+ <!-- <div class="w-full flex justify-center"> -->
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-3 mb-10 sm:px-10 mt-12 xl:max-w-6xl xl:mx-auto">
           <AboutComponent 
             count="10" 
             title="Total Projects" 
-            description="Innovative technology solutions " />
+            description="Innovative technology solutions" />
           <AboutComponent 
             count="9"
             title="Certificates"
@@ -71,7 +72,7 @@
             description="Leveraging machine learning" /> -->
 
       </div>
-
+<!-- </div> -->
       <hr class="border-t-2 border-gray-200 dark:border-gray-700 mb-16 max-w-2xl mx-auto" />
 <!-- education wrapper  -->
       <div class="text-center">
