@@ -29,7 +29,7 @@
 
             <br class="md:hidden lg:block "/>
           </h3>
-          <div class="text-sm lg:text-lg px-2 lg:px-6">
+          <div class="text-sm lg:text-md px-2 lg:px-6">
           <p class="text-justify text-gray-700 dark:text-gray-300  leading-relaxed wrap-break-word">
             I am a Experienced Software Developer with a 
             proven track record of crafting dynamic web 

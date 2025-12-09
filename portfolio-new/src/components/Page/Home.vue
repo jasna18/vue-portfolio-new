@@ -5,10 +5,10 @@
       color: darkMode ? 'white' : 'black'
     }"
     class="w-full relative min-h-screen flex flex-col items-center lg:min-h-0
-           px-2 py-4 p-4 mb-2 pt-20 
+           px-2 py-4 p-4 mb-2 pt-10 
            sm:pr-24  sm:pl-8  /* This was for content box spacing */
            md:px-2  md:gap-2 md:pt-4  md:pl-4 /* This was for content box spacing */
-           lg:pt-4  lg:mt-0
+           lg:pt-6  lg:mt-0
            transition-colors duration-500 
            overflow-x-hidden
          min-w-0 
@@ -34,7 +34,7 @@ mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
         Full Stack Developer
         <!-- <AnimatedHeading /> -->
       </div>
-       <div class="text-lg md:text-xl text-gray-700 dark:text-gray-300 md:ml-2 mb-6 md:mt-0">
+       <div class="text-lg md:text-xl text-gray-700 dark:text-gray-300 md:ml-2 mb-6 lg:mb-4 md:mt-0">
         <AnimatedHeading fontWeight="400"/>
       </div>
       <!-- text section box -->
