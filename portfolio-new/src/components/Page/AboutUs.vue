@@ -2,7 +2,7 @@
 <section id="about" class="min-h-screen"
 >
 <!-- all manin wrapper  -->
-<div class="container  px-4 lg:px-8 w-full py-4 md:py-6 dark:bg-gray-900 text-gray-900 dark:text-gray-100 mx-auto">
+<div class="container  px-4 lg:px-8 w-full py-4 md:py-6 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <div class="text-center mb-4">
         <h2 class="text-xl md:text-3xl font-extrabold text-[#F68537] mb-2">
           About Me
@@ -15,11 +15,11 @@
     <div class="w-full flex flex-col lg:flex-row gap-12 lg:gap-16 px-4 sm:px-6 lg:px-4 xl:px-0 mt-2 md:items-center xl:max-w-6xl xl:mx-auto">
        <!-- photo -->
         <div class=" md:w-1/2 lg:w-1/2 flex flex-col
-        lg:justify-end  mt-4 lg:mt-10 sm:items-center">
+        lg:justify-end  mt-4 lg:mt-10 items-center ">
           <img
         :src="anime"          
          alt="Jasna Profile" 
-            class="rounded-full shadow-lg  object-cover w-54 h-54 md:w-72 md:h-84 lg:w-64 lg:h-64"
+            class="rounded-full shadow-lg  object-cover w-54 h-54 md:w-72 md:h-72 lg:w-64 lg:h-64"
           >
         </div>
         <!-- animated heading,text -->
