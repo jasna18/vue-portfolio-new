@@ -2,7 +2,7 @@
 <section id="about" class="min-h-screen"
 >
 <!-- all manin wrapper  -->
-<div class="container  px-4 lg:px-8 w-full py-4 md:py-6 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+<div class="container  px-4 lg:px-8 lg:mx-auto w-full py-4 md:py-6 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <div class="text-center mb-4">
         <h2 class="text-xl md:text-3xl font-extrabold text-[#F68537] mb-2">
           About Me
@@ -12,7 +12,7 @@
         </p>
       </div>
      <!-- content wrapper photo div,animation div-text div,project heading  -->
-    <div class="w-full flex flex-col lg:flex-row gap-12 lg:gap-16 px-4 sm:px-6 lg:px-4 xl:px-0 mt-2 md:items-center xl:max-w-6xl xl:mx-auto">
+    <div class="w-full flex flex-col lg:flex-row gap-12 lg:gap-16 px-4 sm:px-6 lg:px-4 xl:px-10 mt-2 md:items-center xl:max-w-6xl xl:mx-auto">
        <!-- photo -->
         <div class=" md:w-1/2 lg:w-1/2 flex flex-col
         lg:justify-end  mt-4 lg:mt-10 items-center ">

@@ -4,11 +4,11 @@
     :style="{
       color: darkMode ? 'white' : 'black'
     }"
-    class="w-full relative min-h-screen flex flex-col items-center
-           px-2 py-4 p-4 mb-2 pt-[calc(header-height-here)]
+    class="w-full relative min-h-screen flex flex-col items-center lg:min-h-0
+           px-2 py-4 p-4 mb-2 pt-20 
            sm:pr-24  sm:pl-8  /* This was for content box spacing */
            md:px-2  md:gap-2 md:pt-4  md:pl-4 /* This was for content box spacing */
-           lg:pt-4 
+           lg:pt-4  lg:mt-0
            transition-colors duration-500 
            overflow-x-hidden
          min-w-0 
@@ -18,7 +18,8 @@ mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
   max-w-6xl xl:max-w-7xl 2xl:max-w-[1500px]">
     <!-- left section -->
       <!-- this div for the text content wrapper, removed flex-1 to w-full -->
-        <div class="w-full lg:w-1/2 flex flex-col md:mb-2 items-center md:items-start p-2 md:p-4
+        <div class="w-full lg:w-1/2 flex flex-col md:mb-2 items-center md:items-start p-2 md:p-4 
+        px-4 lg:px-10 mt-4 lg:mt-0
         min-w-0 sm:text-center mb-2 gap-2 md:gap-4 md:text-center   lg:mx-12
            /* Optional: Slightly reduce the wrapper's overall width to prevent stretching */
      "> 
