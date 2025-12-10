@@ -7,3 +7,37 @@ body{
 }
 
 
+/* Base hidden state */
+.aos-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+/* WHEN VISIBLE */
+.aos-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* VARIANTS */
+.fade-up {
+  transform: translateY(30px);
+}
+.fade-down {
+  transform: translateY(-30px);
+}
+.fade-left {
+  transform: translateX(40px);
+}
+.fade-right {
+  transform: translateX(-40px);
+}
+
+/* Animate when visible */
+.aos-visible.fade-left,
+.aos-visible.fade-right,
+.aos-visible.fade-up,
+.aos-visible.fade-down {
+  transform: translate(0, 0);
+}
