@@ -117,15 +117,9 @@ import girlSittingImg from '../../assets/girl-sitting.png';
 // then stops observing it to prevent repeated triggers
 onMounted(() => {
   // If user is at top of the page, show animations immediately
-// if (window.scrollY < 10) {
-//   isVisible.value = true;
-//   setTimeout(() => { isImageVisible.value = true }, 300);
-//   setTimeout(() => { isBarVisible.value = true }, 600);
-// }
 const sections = document.querySelectorAll("section");
 
-    // Check if the content is visible in the viewport
- const observer = new IntersectionObserver(
+const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -144,19 +138,7 @@ const sections = document.querySelectorAll("section");
   if (content.value) {
     observer.observe(content.value);
   }
-//   setTimeout(() => {
-//   isVisible.value = true;
-//   isImageVisible.value = true;
-//   isBarVisible.value = true;
-// }, 500);
 });
-// Use watch to apply the background color to the entire body
-//  watch(darkMode, (newVal) => {
-// const bgColor = newVal ? '#1F2937' : '#A7C1A8';
-  
-//  Update global body style
-//document.body.style.backgroundColor = bgColor;
- //}, { immediate: true }); // Runs immediately on component mount
 </script>
 
 <style>

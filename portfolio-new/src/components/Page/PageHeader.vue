@@ -5,7 +5,7 @@
       :style="{ backgroundColor: darkMode ? '#111827' : '#A7C1A8' }" 
       class="fixed top-0 w-full z-10 transition-colors duration-500"
     >
-      <div class="w-full flex justify-between mx-auto pl-4 
+      <div class="w-full flex justify-between  pl-4 
                   md:w-5/6 md:max-w-7xl h-16 md:mx-auto">
   
         <nav class="flex justify-between items-center py-3 lg:py-3 w-full" 
@@ -62,31 +62,7 @@ const linkClass = (section) => {
   ];
 };
 
-// Scroll Case — Scroll Spy
-onMounted(() => {
-  const sections = document.querySelectorAll("#home, #about, #projects, #contact");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          activeSection.value = entry.target.id;
-        }
-      });
-    },
-    {
-      threshold: 0.25,
-      rootMargin: "-80px 0px 0px 0px" // compensate for your fixed header
-    }
-  );
-
-  sections.forEach((sec) => observer.observe(sec));
-
-  // Sticky header watcher
-  window.addEventListener("scroll", () => {
-    isScrolled.value = window.scrollY > 80;
-  });
-});
 
 
 const headerClass = computed(() => ({
