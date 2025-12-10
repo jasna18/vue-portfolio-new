@@ -117,30 +117,38 @@ import girlSittingImg from '../../assets/girl-sitting.png';
 // then stops observing it to prevent repeated triggers
 onMounted(() => {
   // If user is at top of the page, show animations immediately
-// if (window.scrollY < 10) {
-//   isVisible.value = true;
-//   setTimeout(() => { isImageVisible.value = true }, 300);
-//   setTimeout(() => { isBarVisible.value = true }, 600);
-// }
+if (window.scrollY < 10) {
+  isVisible.value = true;
+  setTimeout(() => { isImageVisible.value = true }, 300);
+  setTimeout(() => { isBarVisible.value = true }, 600);
+}
 const sections = document.querySelectorAll("section");
 
     // Check if the content is visible in the viewport
- const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        isVisible.value = true;
-        setTimeout(() => { isImageVisible.value = true }, 300);
-        setTimeout(() => { isBarVisible.value = true }, 600);
-      } else {
-        isVisible.value = false;
-        isImageVisible.value = false;
-        isBarVisible.value = false;
-      }
-    });
-  },
-  { threshold: 0.2 }
-);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+
+          // 1. Text Box Animation (Immediate)
+          isVisible.value = true;
+
+          // 2. Girl Image Animation (Delayed by 1000ms)
+          setTimeout(() => {
+            isImageVisible.value = true;
+          }, 300); // <-- Delay the image start by 200 milliseconds
+          
+          // 3. Vertical Bar Animation (Delay 2: 600ms)
+          setTimeout(() => {
+            isBarVisible.value = true;
+          }, 600);
+          observer.unobserve(entry.target); // Stop observing once visible
+        }
+      });
+    },
+    { threshold: 0.2 } // Trigger when 30% of hero is visible
+  );
+
   if (content.value) {
     observer.observe(content.value);
   }
