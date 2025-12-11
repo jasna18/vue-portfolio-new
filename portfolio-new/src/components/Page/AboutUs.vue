@@ -44,7 +44,7 @@
             class=" w-full lg:w-auto lg:inline-flex flex flex-col mt-6 px-4 py-3 bg-[#F68537]  
             text-white text-center lg:text-start  font-semibold rounded-lg 
             shadow-md hover:bg-[#F68537] transition duration-300 mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-            View Projects
+            <> View Projects
           </a>
           </div>
 
