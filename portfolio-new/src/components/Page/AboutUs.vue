@@ -91,14 +91,14 @@
     <ExpertiseCard 
       title="Full-Stack Development"
       description="Modern web applications, RESTful APIs, database design, cloud deployment, and scalable architectures."
-      :skills="['Tailwind CSS', 'Vue.js', 'JavaScript','Firebase', 'Flask', 'FastAPI', 'MongoDB', 'PostgreSQL', 'AWS']"
+      :skills="['Tailwind CSS', 'Vue.js', 'JavaScript','Firebase', 'PostgreSQL', 'AWS','Flask', 'FastAPI','MongoDB']"
       icon="👨‍💻"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800"
     />
 
     <ExpertiseCard 
       title="Backend Engineering"
       description="Efficient API design, microservices, caching strategies, authentication, and performance optimization."
-      :skills="['Laravel', 'CodeIgniter', 'PHP', 'MySQL', 'Redis', 'Docker', 'WebSockets', 'NGINX', 'REST API']"
+      :skills="['Laravel', 'CodeIgniter','WebSockets', 'NGINX', 'PHP', 'MySQL', 'Redis', 'Docker',  'REST API']"
       icon="🛠️"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800"
     />
     </div>
