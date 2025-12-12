@@ -53,6 +53,26 @@ const setActive = (section) => {
   closeMenu();
 };
 
+// Update active section on scroll
+const updateActiveSection = () => {
+  const sections = ['home', 'about', 'projects', 'contact'];
+  for (let section of sections) {
+    const element = document.getElementById(section) || document.querySelector(`[id="${section}"]`);
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      if (rect.top <= 100 && rect.bottom >= 100) {
+        activeSection.value = section;
+        break;
+      }
+    }
+  }
+  isScrolled.value = window.scrollY > 0;
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', updateActiveSection);
+});
+
 // Apply active class
 const linkClass = (section) => {
   return [
