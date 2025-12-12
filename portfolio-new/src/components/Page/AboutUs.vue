@@ -25,9 +25,9 @@
         <!-- animated heading,text -->
        <div class="md:w-full lg:space-y-2  lg:w-1/2 mt-4 lg:mt-4" >
           <h3 class="text-sm  leading-tight text-center lg:text-start lg:mb-4 px-2 lg:px-6 md:text-center mb-4" >
-            <AnimateHeading :headings="['Hello World', 'ഹലോ വേൾഡ്']" fontWeight="1000" class="text-orange-500"/>
+            <AnimateHeading :headings="['Hello World', 'ഹലോ വേൾഡ്']" fontWeight="400" class="text-orange-500"/>
 
-            <br class="md:hidden lg:block "/>
+            <!-- <br class="md:hidden lg:block "/> -->
           </h3>
           <div class="text-sm lg:text-md px-2 lg:px-6">
           <p class="text-justify text-gray-700 dark:text-gray-300  leading-relaxed wrap-break-word" data-aos="fade-left" >
@@ -54,15 +54,19 @@
  <!-- <div class="w-full flex justify-center"> -->
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-3 mb-10 sm:px-10 mt-12 xl:max-w-6xl xl:mx-auto">
-          <AboutComponent 
+          
+        <AboutComponent 
+            icon ="💼"
             count="10" 
             title="Total Projects" 
             description="Innovative technology solutions" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400"/>
           <AboutComponent 
+          icon ="📜"
             count="9"
             title="Certificates"
             description="Professional certifications earned" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"/>
           <AboutComponent 
+          icon="🎓"
             count="3" 
             title="Years of Experience"
             description="Continuous learning journey" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600"/>
@@ -73,13 +77,34 @@
 
       </div>
 <!-- </div> -->
-      <hr class="border-t-2 border-gray-200 dark:border-gray-700 mb-16 max-w-2xl mx-auto" />
+      <!-- <hr class="border-t-2 border-gray-200 dark:border-gray-700 mb-16 max-w-2xl mx-auto" /> -->
 <!-- education wrapper  -->
-      <div class="text-center">
-        <h2 class="text-md md:text-2xl font-bold mb-2">
-          Education
-        </h2>
+  <section id="expertise" class="px-4 lg:px-12 py-10">
+      <div class="max-w-6xl mx-auto border border-green-300 rounded-2xl p-8 bg-white/60 shadow-sm">
+
+  <h2 class="text-center text-xl md:text-2xl font-extrabold text-[#F68537] mb-5" data-aos="fade-up" data-aos-delay="00" data-aos-duration="800" >
+    Technical Expertise
+  </h2>
+
+  <!-- Wrapper for 2 cards -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <ExpertiseCard 
+      title="Full-Stack Development"
+      description="Modern web applications, RESTful APIs, database design, cloud deployment, and scalable architectures."
+      :skills="['Tailwind CSS', 'Vue.js', 'JavaScript','Firebase', 'Flask', 'FastAPI', 'MongoDB', 'PostgreSQL', 'AWS']"
+      icon="👨‍💻"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800"
+    />
+
+    <ExpertiseCard 
+      title="Backend Engineering"
+      description="Efficient API design, microservices, caching strategies, authentication, and performance optimization."
+      :skills="['Laravel', 'CodeIgniter', 'PHP', 'MySQL', 'Redis', 'Docker', 'WebSockets', 'NGINX', 'REST API']"
+      icon="🛠️"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800"
+    />
+    </div>
       </div>
+</section>
+
 
   </div>
     </section>
@@ -90,6 +115,8 @@ import AboutComponent from '../composobles/AboutComponent.vue';
 import anime from '../../assets/anime.jpeg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ExpertiseCard from '../composobles/ExpertiseCard.vue';
+import AnimateHeading from '../composobles/AnimateHeading.vue';
 </script>
 
 <style scoped>
