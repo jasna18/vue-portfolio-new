@@ -82,7 +82,7 @@
   <section id="expertise" class="px-4 lg:px-12 py-10">
       <div class="max-w-6xl mx-auto border border-green-300 rounded-2xl p-8 bg-white/60 shadow-sm">
 
-  <h2 class="text-center text-xl md:text-2xl font-extrabold text-[#F68537] mb-5" data-aos="fade-up" data-aos-delay="00" data-aos-duration="800" >
+  <h2 class="text-center text-xl md:text-2xl font-extrabold text-[#F68537] mb-5" data-aos="fade-down" data-aos-delay="00" data-aos-duration="800" >
     Technical Expertise
   </h2>
 
@@ -92,14 +92,14 @@
       title="Full-Stack Development"
       description="Modern web applications, RESTful APIs, database design, cloud deployment, and scalable architectures."
       :skills="['Tailwind CSS', 'Vue.js', 'JavaScript','Firebase', 'PostgreSQL', 'AWS','Flask', 'FastAPI','MongoDB']"
-      icon="👨‍💻"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800"
+      icon="👨‍💻"  data-aos="fade-up" data-aos-delay="400" data-aos-duration="800"
     />
 
     <ExpertiseCard 
       title="Backend Engineering"
       description="Efficient API design, microservices, caching strategies, authentication, and performance optimization."
       :skills="['Laravel', 'CodeIgniter','WebSockets', 'NGINX', 'PHP', 'MySQL', 'Redis', 'Docker',  'REST API']"
-      icon="🛠️"  data-aos="fade-right" data-aos-delay="400" data-aos-duration="800"
+      icon="🛠️"  data-aos="fade-up" data-aos-delay="400" data-aos-duration="800"
     />
     </div>
       </div>
