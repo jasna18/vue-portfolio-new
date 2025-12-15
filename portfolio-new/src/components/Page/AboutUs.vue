@@ -55,17 +55,17 @@
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-3 mb-10 sm:px-10 mt-12 xl:max-w-6xl xl:mx-auto">
           
-        <AboutComponent 
+        <AboutCards 
             icon ="💼"
             count="10" 
             title="Total Projects" 
             description="Innovative technology solutions" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400"/>
-          <AboutComponent 
-          icon ="📜"
+          <AboutCards
+             icon ="📜"
             count="9"
             title="Certificates"
             description="Professional certifications earned" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"/>
-          <AboutComponent 
+          <AboutCards
           icon="🎓"
             count="3" 
             title="Years of Experience"
@@ -111,12 +111,12 @@
 </template>
 
 <script setup>
-import AboutComponent from '../composobles/AboutComponent.vue';
 import anime from '../../assets/anime.jpeg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ExpertiseCard from '../composobles/ExpertiseCard.vue';
 import AnimateHeading from '../composobles/AnimateHeading.vue';
+import AboutCards from '../composobles/AboutCards.vue';
 </script>
 
 <style scoped>
