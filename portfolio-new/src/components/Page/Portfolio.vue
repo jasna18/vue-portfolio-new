@@ -14,11 +14,11 @@
       </div>
 
 
-  <Tabs />
+  <PortfolioTabs />
       
 </section>
 </template>
 
 <script setup>
-  import Tabs from '../composobles/Tabs.vue';
+  import PortfolioTabs from '../composobles/PortfolioTabs.vue';
 </script>
