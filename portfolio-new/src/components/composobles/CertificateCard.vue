@@ -1,9 +1,21 @@
 <!-- included in Certificates.vue -->
 <template>
+  <!-- <div
+    class="rounded-2xl border border-orange-400 bg-gradient-to-b
+           from-orange-50 to-white transition hover:shadow-xl ml-5 mr-5
+           p-4 sm:p-3 
+          w-[40%] sm:w-[80%] lg:w-[88%]  mb-2
+         min-h-[360px] sm:min-h-[280px] lg:min-h-[280px]
+         flex flex-col  justify-between gap-1" 
+  > -->
   <div
-    class="rounded-2xl border border-orange-400 p-4 bg-gradient-to-b
-           from-orange-50 to-white transition hover:shadow-xl ml-5 mr-5"
-  >
+  class="rounded-xl border border-orange-400
+         bg-gradient-to-b from-orange-50 to-white
+         p-2 sm:p-3
+         min-h-[200px] sm:min-h-[260px]
+         flex flex-col justify-between
+         transition hover:shadow-lg gap-2"
+>
     <!-- Image -->
     <div
       class="rounded-xl border border-yellow-400 p-2 mb-4 overflow-hidden cursor-pointer"
@@ -13,16 +25,16 @@
         :src="image"
         :alt="title"
         loading="lazy"
-        class="rounded-lg w-full h-auto transition-transform duration-300 hover:scale-105"
+        class="w-full aspect-[4/3] object-contain rounded-lg"
       />
     </div>
 
     <!-- Content -->
-    <h3 class="font-semibold text-gray-800 text-sm leading-snug">
+    <h3 class="font-semibold text-gray-800 text-sm lg:text-sm leading-snug mt-1">
       {{ title }}
     </h3>
 
-    <p class="text-sm text-orange-400 mt-1">
+    <p class="text-xs text-orange-400 mt-1">
       by {{ issuer }}
     </p>
 
@@ -32,13 +44,13 @@
         @click="emit('open', image)"
         class="hover:underline flex items-center gap-1"
       >
-        👁 Preview
+        <span class="text-xs">👁 Preview</span>
       </button>
 
       <a
         :href="link"
         target="_blank"
-        class="hover:underline flex items-center gap-1"
+        class="hover:underline flex items-center gap-1 text-xs"
       >
         🔗 Link
       </a>
@@ -55,4 +67,18 @@ defineProps({
 })
 
 const emit = defineEmits(["open"])
+
+import { ref } from "vue"
+
+const showPreview = ref(false)
+const selectedCert = ref(null)
+
+const openPreview = (cert) => {
+  selectedCert.value = cert
+  showPreview.value = true
+}
+
+const closePreview = () => {
+  showPreview.value = false
+}
 </script>
