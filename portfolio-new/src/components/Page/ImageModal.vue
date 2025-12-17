@@ -5,10 +5,11 @@
     @click.self="emit('close')"
   >
     <div class="bg-white p-4 rounded-xl max-w-3xl w-full">
-      <img :src="image" class="rounded-lg w-full h-auto aspect-[4/3]" />
+      <img :src="image" class="rounded-lg w-full h-auto aspect-[1/1] sm:aspect-[4/3]
+" />
       <button
       class="w-full max-w-sm  lg:max-w-none
-           rounded-xl bg-transparent content-wrapper object-contain"
+           rounded-xl bg-transparent content-wrapper"
         @click="emit('close')"
       >
         Close
