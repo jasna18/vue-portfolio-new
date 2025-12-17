@@ -16,7 +16,7 @@
          flex flex-col justify-between
          transition hover:shadow-lg gap-2"
 >
-    <!-- Image -->
+    <!-- Image [user clicks the card-vue send emit event+ image going to parent ]-->
     <div
       class="rounded-xl border border-yellow-400 p-2 mb-4 overflow-hidden cursor-pointer"
       @click="emit('open', image)"
@@ -65,20 +65,8 @@ defineProps({
   preview: String,
   link: String,
 })
-
+//i can send an event to parent component called open upward
 const emit = defineEmits(["open"])
 
-import { ref } from "vue"
 
-const showPreview = ref(false)
-const selectedCert = ref(null)
-
-const openPreview = (cert) => {
-  selectedCert.value = cert
-  showPreview.value = true
-}
-
-const closePreview = () => {
-  showPreview.value = false
-}
 </script>
