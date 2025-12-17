@@ -1,7 +1,9 @@
 
 <template>
   <!-- Grid -->
-  <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-6">
+  <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-1 md:gap-4 px-4 lg:gap-4 mb-6">
+    <!-- <div class="grid grid-cols- sm:grid-cols-2 lg:grid-cols-4 
+            gap-4 sm:gap-3 lg:gap-8"> -->
     <CertificateCard
       v-for="(cert, index) in certificates"
       :key="index"
