@@ -1,5 +1,5 @@
 <template>
-<section id="about" class="min-h-screen"
+<section id="about" class="py-2 md:py-2 lg:py-8"
 >
 <!-- all manin wrapper  -->
 <div class=" px-4 lg:px-8 w-full lg:mx-autopy-4 md:py-6 dark:bg-gray-900 text-gray-900 dark:text-gray-100 xl:justify-center">
