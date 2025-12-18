@@ -24,13 +24,13 @@ mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
            /* Optional: Slightly reduce the wrapper's overall width to prevent stretching */
      "> 
       
-        <div class="text-sm md:text-md mb-4 mt-2 text-center  md:mb-4 md:ml-2 rounded-full 
+        <div class="text-xs md:text-md mb-4 mt-2 text-center  md:mb-4 md:ml-2 rounded-full 
                dark:bg-gray-800/40 border border-white/10 backdrop-blur-md shadow-lg p-1 px-2 bg-white/30 text-[#000000]
               inset-shadow-lg shadow-orange-500/50 md:text-center md:item-center">
         🌟 Ready to Innovate
       </div>
 
-      <div class="text-lg md:text-2xl font-semibold text-gray-700 dark:text-gray-300 md:ml-2 mb-0 md:mt-0">
+      <div class="text-md md:text-xl font-semibold text-gray-700 dark:text-gray-300 md:ml-2 mb-0 md:mt-0">
         Full Stack Developer
         <!-- <AnimatedHeading /> -->
       </div>
@@ -57,8 +57,8 @@ mx-auto px-4  gap-2 xl:gap-20 2xl:gap-32
 
          <!-- button section revised, removed flex-1 to w-full-->
   <!-- <div class="w-full flex flex-row md:flex-row md:items-start gap-5 pl-4 md:pl-0 ml-4 md:ml-2 mt-12 mb-2 md:justify-start justify-center "> -->
-<div class="w-full flex flex-row gap-5 lg:flex-wrap sm:justify-center sm:mt-8 md:flex-row md:items-start md:justify-start 
-           md:pl-0 ml-2 md:ml-2 mt-12 mb-2 justify-center md:w-full">
+<div class="w-full flex flex-row gap-5 lg:gap-4 lg:flex-wrap sm:justify-center sm:mt-8 md:flex-row md:items-start md:justify-start 
+           md:pl-0 ml-2 md:ml-2 mt-8 mb-2 justify-center md:w-full">
       <DivComponent text="Laravel" width="px-1" class=""/>
       <DivComponent text="Codeigniter" width="px-1"/>
       <DivComponent text="Python" width="px-1"/>
