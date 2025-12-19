@@ -9,6 +9,9 @@
       :key="index"
       v-bind="cert"
       @open="selectedImage = $event"
+      data-aos="fade-up"
+      :data-aos-duration="600"
+      :data-aos-delay="600 + (index * 100)"
     />
   </div>
 
