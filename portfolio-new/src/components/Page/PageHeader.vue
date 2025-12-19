@@ -17,7 +17,7 @@
           ]">
             <li><a href="home" @click="setActive('home')" :class="linkClass('home')">Home</a></li>
             <li><a href="#about" @click="setActive('about')" :class="linkClass('about')">About</a></li>
-            <li><a href="#projects" @click="setActive('projects')" :class="linkClass('projects')">Projects</a></li>
+            <li><a href="#portfolio" @click="setActive('portfolio')" :class="linkClass('portfolio')">Portfolio</a></li>
             <li><a href="#contact" @click="setActive('contact')" :class="linkClass('contact')">Contact</a></li>
           </ul>
 
