@@ -10,8 +10,7 @@
         :image="project.image"
         :link="project.link"
          mode="project"
-
-        class="w-full object-cover rounded-lg overflow-hidden"
+        class="w-full object-cover rounded-lg overflow-hidden" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200"
 
       />
 </div>
