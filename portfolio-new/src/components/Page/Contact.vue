@@ -131,43 +131,161 @@
       <div class="my-8 border-t border-gray-200"></div>
 
       <!-- Connect Section -->
-      <h3 class="text-lg font-semibold mb-4">Connect With Me</h3>
+       <!-- Connect Section -->
+<h3 class="text-lg font-semibold mb-4">Connect With Me</h3>
 
-      <div class="space-y-4">
-        <!-- LinkedIn -->
-        <a
-          href="https://www.linkedin.com/in/jasna-m-17374749/ "
-          target="_blank"
-          class="flex items-center justify-between p-4 rounded-xl
-                 bg-blue-100 hover:bg-blue-200 transition"
-        >
-          <div class="flex items-center gap-3">
-            <div class="bg-white p-2 rounded-lg text-blue-600 font-bold">in</div>
-            <div>
-              <p class="font-semibold">LinkedIn</p>
-              <p class="text-sm text-gray-600">linkedin.com/in/yourprofile</p>
-            </div>
-          </div>
-          ↗
-        </a>
+<div class="space-y-4">
+  <!-- LinkedIn -->
+  <a
+    href="https://www.linkedin.com/in/jasna-m-17374749/"
+    target="_blank"
+    class="flex items-center justify-between p-4 rounded-xl
+           bg-blue-100 hover:bg-blue-200 transition"
+  >
+    <div class="flex items-center gap-3">
+      <div class="bg-white p-2 rounded-lg text-blue-600 font-bold">
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24"
+     fill="#0A66C2"
+     class="w-5 h-5">
+  <path
+    fill-rule="evenodd"
+    d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96
+       2.48 2.48 0 0 1 0-4.96ZM3 9h3.96v12H3V9Zm7.5 0h3.8v1.64h.05
+       c.53-.95 1.82-1.95 3.74-1.95
+       4 0 4.74 2.63 4.74 6.05V21h-3.96
+       v-5.55c0-1.32-.03-3.02-1.84-3.02
+       -1.85 0-2.13 1.44-2.13 2.93V21H10.5V9Z"
+    clip-rule="evenodd"
+  />
+</svg>
 
-        <!-- WhatsApp -->
-        <a
-          href="https://wa.me/971XXXXXXXXX"
-          target="_blank"
-          class="flex items-center justify-between p-4 rounded-xl
-                 bg-green-100 hover:bg-green-200 transition"
-        >
-          <div class="flex items-center gap-3">
-            <div class="bg-white p-2 rounded-lg">💬</div>
-            <div>
-              <p class="font-semibold">WhatsApp</p>
-              <p class="text-sm text-gray-600">+971 XXX XXX XXX</p>
-            </div>
-          </div>
-          ↗
-        </a>
       </div>
+      <div>
+        <p class="font-semibold">LinkedIn</p>
+        <p class="text-sm text-gray-600">
+          linkedin.com/in/your-profile
+        </p>
+      </div>
+    </div>
+    ↗
+  </a>
+
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/971XXXXXXXXX"
+    target="_blank"
+    class="flex items-center justify-between p-4 rounded-xl
+           bg-green-100 hover:bg-green-200 transition"
+  >
+    <div class="flex items-center gap-3">
+      <div class="bg-white p-2 rounded-lg text-green-600">
+        <svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 24 24"
+     fill="none"
+     class="w-5 h-5">
+  <!-- Outer chat bubble -->
+  <path
+    d="M12 3
+       a9 9 0 0 0-9 9
+       c0 1.8.53 3.47 1.45 4.88L3 21
+       l4.12-1.34
+       A8.95 8.95 0 0 0 12 21
+       a9 9 0 0 0 9-9
+       a9 9 0 0 0-9-9Z"
+    stroke="#25D366"
+    stroke-width="1.5"
+    stroke-linejoin="round"
+  />
+
+  <!-- Refined phone receiver -->
+  <path
+    d="M9.2 8.8
+       c.35-.55.7-.7 1.05-.7
+       h.75
+       c.25 0 .45.08.6.45
+       l.85 2
+       c.1.25.05.45-.1.65
+       l-.6.7
+       c-.18.2-.15.4.05.65
+       c.45.6 1.1 1.25 1.8 1.7
+       c.25.15.45.12.65-.08
+       l.7-.75
+       c.15-.15.35-.2.6-.1
+       l2.05.9
+       c.3.15.4.35.35.65
+       c-.12.75-.9 1.55-1.85 1.7
+       c-.9.15-1.9-.05-3.25-.8
+       c-1.95-1.05-3.5-2.75-4.45-4.5
+       c-.6-1.05-.7-2.1-.25-2.9Z"
+    stroke="#25D366"
+    stroke-width="1.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+      </div>
+      <div>
+        <p class="font-semibold">WhatsApp</p>
+        <p class="text-sm text-gray-600">+971 XXX XXX XXX</p>
+      </div>
+    </div>
+    ↗
+  </a>
+
+  <!-- GitHub -->
+  <a
+    href="https://github.com/jasna18"
+    target="_blank"
+    class="flex items-center justify-between p-4 rounded-xl
+           bg-gray-100 hover:bg-gray-200 transition"
+  >
+    <div class="flex items-center gap-3">
+      <div class="bg-white p-2 rounded-lg text-gray-800">
+        <!-- GitHub Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+             fill="currentColor" class="w-5 h-5">
+          <path
+            fill-rule="evenodd"
+            d="M12 2C6.477 2 2 6.484 2 12.019
+               c0 4.432 2.865 8.195 6.839 9.504
+               .5.092.682-.217.682-.483
+               0-.237-.009-.868-.014-1.703
+               -2.782.605-3.369-1.344-3.369-1.344
+               -.454-1.158-1.11-1.466-1.11-1.466
+               -.908-.62.069-.608.069-.608
+               1.003.071 1.531 1.032 1.531 1.032
+               .892 1.53 2.341 1.088 2.91.832
+               .091-.647.35-1.088.636-1.338
+               -2.22-.253-4.555-1.113-4.555-4.951
+               0-1.093.39-1.988 1.029-2.688
+               -.103-.253-.446-1.272.098-2.65
+               0 0 .84-.27 2.75 1.026
+               .798-.222 1.654-.333 2.504-.337
+               .85.004 1.706.115 2.504.337
+               1.909-1.296 2.748-1.026 2.748-1.026
+               .546 1.378.202 2.397.1 2.65
+               .64.7 1.028 1.595 1.028 2.688
+               0 3.848-2.339 4.695-4.566 4.943
+               .359.309.678.919.678 1.852
+               0 1.337-.012 2.419-.012 2.747
+               0 .268.18.58.688.481
+               A10.02 10.02 0 0 0 22 12.019
+               C22 6.484 17.523 2 12 2Z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div>
+        <p class="font-semibold">GitHub</p>
+        <p class="text-sm text-gray-600">github.com/your-username</p>
+      </div>
+    </div>
+    ↗
+  </a>
+</div>
+
 </div>
     </div>
   </section>
