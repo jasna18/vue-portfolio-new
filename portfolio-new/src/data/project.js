@@ -1,6 +1,7 @@
 import Img1 from '../assets/projects/zufi.jpg'
 import Img2 from '../assets/projects/tasc.jpg'
 import Img3 from '../assets/projects/chlorofill.png'
+import Img4 from '../assets/projects/dbwc.png'
 
 export const projects = [
   {
@@ -20,5 +21,11 @@ export const projects = [
     title: 'chlorofill',
     image: Img3,
     link: 'https://chlorofill.live',
+  },
+    {
+    id: 4,
+    title: 'DBWC',
+    image: Img4,
+    link: 'https://https://www.dbwc.ae/',
   },
 ]
