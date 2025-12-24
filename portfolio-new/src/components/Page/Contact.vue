@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full py-16 px-4 flex justify-center ">
+  <section id="contact" class="w-full py-16 px-4 flex justify-center ">
     <div class="w-full max-w-3xl space-y-10">
        <div class="text-center mb-4">
         <h2 class="text-xl md:text-3xl font-extrabold text-orange-500 mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
