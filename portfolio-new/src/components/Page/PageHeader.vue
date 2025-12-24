@@ -90,6 +90,8 @@ const headerClass = computed(() => ({
 nav a {
   color: black;
   transition: 0.3s;
+    text-decoration: none;
+
 }
 
 nav.scrolled-nav a {
@@ -98,11 +100,11 @@ nav.scrolled-nav a {
 
 nav a.active-link {
   color: #b94010;
-  border-bottom: 2px solid #b94010;
+  border-bottom:none;
 }
 
 nav.scrolled-nav a.active-link {
   color: #e04318 !important;
-  border-bottom: 2px solid #e04318;
+  border-bottom: none;
 }
 </style>
