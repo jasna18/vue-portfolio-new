@@ -35,7 +35,7 @@ import Projects from "../Page/Projects.vue"
 import Certificates from "../Page/Certificates.vue"
 import TechStack from "../Page/TechStack.vue"
 
-const activeTab = ref("projects")
+const activeTab = ref("certificates")
 
 const tabs = [
   { id: "projects", label: "Projects", icon: "📁" },
