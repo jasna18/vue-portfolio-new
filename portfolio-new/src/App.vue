@@ -8,6 +8,7 @@
       <Home />
       <AboutUs />
       <Portfolio />
+      <Contact />
     </main>
 
     <!-- footer -->
@@ -21,6 +22,7 @@ import PageFooter from './components/Page/PageFooter.vue';
 import Home from './components/Page/Home.vue';
 import AboutUs from './components/Page/AboutUs.vue';
 import Portfolio from './components/Page/Portfolio.vue';
+import Contact from './components/Page/Contact.vue';
 import { watch } from "vue";
 import { darkMode } from "./data/darkMode.js";
 
