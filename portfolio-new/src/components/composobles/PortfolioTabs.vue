@@ -8,10 +8,10 @@
       <button
         v-for="tab in tabs"
         :key="tab.id"
-        @click="activeTab = tab.id"
+        @click="tabsStore.setTab(tab.id)"
         class="flex-1 flex flex flex-col md:flex-row items-center sm:text-xs md:text-md lg:text-lg justify-center gap-2 sm:py-1 md:py-3 rounded-lg font-semibold transition-all"
         :class="
-          activeTab === tab.id
+          tabsStore.activeTab === tab.id
             ? 'bg-orange-100 text-orange-400'
             : 'text-gray-600 hover:bg-gray-100'
         "
@@ -23,9 +23,9 @@
 
     <!-- Tabs Content -->
     <div class="mt-10">
-      <Projects v-if="activeTab === 'projects'" />
-      <Certificates v-if="activeTab === 'certificates'" />
-      <TechStack v-if="activeTab === 'tech'" />
+      <Projects v-if="tabsStore.activeTab === 'projects'" />
+      <Certificates v-if="tabsStore.activeTab === 'certificates'" />
+      <TechStack v-if="tabsStore.activeTab === 'tech'" />
     </div>
   </div>
 </template>
@@ -34,8 +34,9 @@ import { ref } from "vue"
 import Projects from "../Page/Projects.vue"
 import Certificates from "../Page/Certificates.vue"
 import TechStack from "../Page/TechStack.vue"
+import { usePortfolioTabsStore } from '../../stores/portfolioTabs'
 
-const activeTab = ref("certificates")
+const tabsStore = usePortfolioTabsStore()
 
 const tabs = [
   { id: "projects", label: "Projects", icon: "📁" },

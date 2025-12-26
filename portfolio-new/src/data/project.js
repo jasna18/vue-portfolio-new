@@ -26,6 +26,6 @@ export const projects = [
     id: 4,
     title: 'DBWC',
     image: Img4,
-    link: 'https://https://www.dbwc.ae/',
+    link: 'https://www.dbwc.ae/',
   },
 ]
