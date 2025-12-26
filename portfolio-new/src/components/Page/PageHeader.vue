@@ -48,13 +48,15 @@ const setActive = (section) => {
 
 // Update active section on scroll
 const updateActiveSection = () => {
-  const sections = ['home', 'about', 'projects', 'contact'];
+  const sections = ['home', 'about', 'portfolio', 'contact'];
   for (let section of sections) {
     const element = document.getElementById(section) || document.querySelector(`[id="${section}"]`);
     if (element) {
       const rect = element.getBoundingClientRect();
       if (rect.top <= 100 && rect.bottom >= 100) {
         activeSection.value = section;
+          console.log("Active Section:", section);
+
         break;
       }
     }
