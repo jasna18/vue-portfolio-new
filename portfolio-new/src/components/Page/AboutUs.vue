@@ -58,16 +58,19 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:grid-cols-3 mb-10 sm:px-10 mt-12 xl:max-w-6xl xl:mx-auto">
           
         <AboutCards 
+           @click="goToProjects"
             icon ="💼"
             count="10" 
             title="Total Projects" 
             description="Innovative technology solutions" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400"/>
           <AboutCards
+            @click="goToCertificates"
              icon ="📜"
             count="9"
             title="Certificates"
             description="Professional certifications earned" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500"/>
           <AboutCards
+            @click="goToTechstack"
           icon="🎓"
             count="3" 
             title="Years of Experience"
@@ -125,6 +128,20 @@ const tabsStore = usePortfolioTabsStore();
 
 const goToProjects = () => {
   tabsStore.setTab('projects')
+
+  document.getElementById('portfolio')?.scrollIntoView({
+    behavior: 'smooth'
+  })
+}
+const goToCertificates = () => {
+  tabsStore.setTab('certificates')
+
+  document.getElementById('portfolio')?.scrollIntoView({
+    behavior: 'smooth'
+  })
+}
+const goToTechstack = () => {
+  tabsStore.setTab('techstack')
 
   document.getElementById('portfolio')?.scrollIntoView({
     behavior: 'smooth'
